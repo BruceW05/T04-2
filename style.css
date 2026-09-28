@@ -1,0 +1,333 @@
+/* =========================================================
+   Volt Home Appliances — stylesheet
+   Palette pulled from the logo: cream/gold field, orange
+   lightning bolt, dark brown outline.
+   ========================================================= */
+
+:root {
+  --gold: #ecc975;
+  --gold-dark: #d9ad3f;
+  --orange: #f2984b;
+  --orange-dark: #d97724;
+  --brown: #6b4a2e;
+  --brown-dark: #4a3220;
+  --cream: #fbf6e8;
+  --text: #362512;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background-color: var(--cream);
+  line-height: 1.55;
+}
+
+h1, h2 {
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  color: var(--brown-dark);
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- Header / Navigation ---------- */
+
+.site-header {
+  background-color: var(--brown);
+  border-bottom: 4px solid var(--orange);
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 24px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: background-color 0.15s ease;
+}
+
+.logo-link:hover,
+.logo-link:focus-visible {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.logo-img {
+  width: 42px;
+  height: 42px;
+  display: block;
+}
+
+.logo-text {
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: var(--cream);
+  font-weight: 600;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  background-color: var(--orange);
+  color: var(--brown-dark);
+}
+
+.nav-link.active {
+  background-color: var(--gold);
+  color: var(--brown-dark);
+}
+
+.current-page-indicator {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6px 24px 10px;
+  color: var(--cream);
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.current-page-indicator span {
+  font-weight: 700;
+  color: var(--gold);
+}
+
+/* ---------- Page sections ---------- */
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px 60px;
+}
+
+.page {
+  display: none;
+}
+
+.page.active-page {
+  display: block;
+  animation: fade-in 0.25s ease;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero {
+  background-color: var(--gold);
+  border: 2px solid var(--brown);
+  border-radius: 14px;
+  padding: 36px;
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.content-block {
+  margin-bottom: 28px;
+}
+
+.page-intro {
+  color: var(--brown-dark);
+  font-size: 1.05rem;
+}
+
+.stats-row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  flex: 1 1 200px;
+  background-color: var(--white);
+  border: 2px solid var(--gold-dark);
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--orange-dark);
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--brown-dark);
+}
+
+/* ---------- Televisions table ---------- */
+
+.tv-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tv-table th,
+.tv-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #e6dcc0;
+}
+
+.tv-table thead {
+  background-color: var(--brown);
+  color: var(--cream);
+}
+
+.tv-table tbody tr:hover {
+  background-color: var(--cream);
+}
+
+.fine-print {
+  font-size: 0.8rem;
+  color: #7a6a52;
+}
+
+/* ---------- Research section (Televisions page) ---------- */
+
+.research {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 3px solid var(--gold-dark);
+}
+
+.research-question {
+  background-color: var(--white);
+  border: 2px solid var(--gold-dark);
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin-bottom: 24px;
+}
+
+.research-question h3 {
+  color: var(--brown-dark);
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+}
+
+.research-question p {
+  margin: 0 0 16px;
+}
+
+.chart-figure {
+  margin: 0;
+  background-color: var(--cream);
+  border: 1px solid #e6dcc0;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.chart-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.chart-figure figcaption {
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--brown-dark);
+  padding-top: 8px;
+}
+
+.chart-pair {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.chart-pair .chart-figure {
+  flex: 1 1 280px;
+}
+
+.chart-figure--wide {
+  width: 100%;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  background-color: var(--brown-dark);
+  color: var(--cream);
+  text-align: center;
+  padding: 18px 24px;
+  font-size: 0.85rem;
+}
+
+.site-footer p {
+  margin: 4px 0;
+}
+
+.genai-note {
+  opacity: 0.8;
+  font-size: 0.78rem;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+
+  .stats-row {
+    flex-direction: column;
+  }
+}

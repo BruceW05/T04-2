@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volt Home Appliances</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#" class="logo-link" data-page="home" aria-label="Go to home page">
+        <img src="images/PowerIcon.png" alt="Volt logo" class="logo-img">
+        <span class="logo-text">Volt</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link" data-page="home">Home</a></li>
+        <li><a href="#" class="nav-link" data-page="televisions">Televisions</a></li>
+        <li><a href="#" class="nav-link" data-page="about">About Us</a></li>
+      </ul>
+    </nav>
+    <p class="current-page-indicator">You are viewing: <span id="current-page-label">Home</span></p>
+  </header>
+
+  <main>
+
+    <!-- HOME PAGE -->
+    <section id="home" class="page active-page">
+      <div class="hero">
+        <h1>Power your home. Watch what it costs.</h1>
+        <p class="tagline">Volt helps Australian households compare appliance energy use so every purchase is an informed one.</p>
+      </div>
+
+      <div class="content-block">
+        <h2>Why energy consumption matters</h2>
+        <p>
+          Placeholder content: In Australia, home appliances account for a significant share of household
+          electricity use. According to typical energy rating guidance, refrigerators, televisions, and
+          heating/cooling systems are amongst the largest ongoing contributors to a household's power bill.
+          The Australian Government's Energy Rating Label system helps consumers compare the running cost
+          of appliances before they buy &mdash; the more stars, the more efficient the appliance.
+        </p>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <span class="stat-number">~30%</span>
+          <span class="stat-label">of a typical Australian household's electricity bill comes from heating &amp; cooling (placeholder figure)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">6&#9733;</span>
+          <span class="stat-label">the highest Energy Rating Label score available for most whitegoods and TVs</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">$1,500+</span>
+          <span class="stat-label">estimated average annual household energy spend (placeholder figure)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TELEVISIONS PAGE -->
+    <section id="televisions" class="page">
+      <h1>Televisions</h1>
+      <p class="page-intro">Placeholder comparison content: television energy use in the Australian market, by screen size and technology.</p>
+
+      <table class="tv-table">
+        <thead>
+          <tr>
+            <th>Model (placeholder)</th>
+            <th>Screen Size</th>
+            <th>Panel Type</th>
+            <th>Energy Rating</th>
+            <th>Est. Annual Running Cost*</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Volt Clarity 43</td>
+            <td>43&Prime;</td>
+            <td>LED</td>
+            <td>4.5 &#9733;</td>
+            <td>$28 / year</td>
+          </tr>
+          <tr>
+            <td>Volt Clarity 55</td>
+            <td>55&Prime;</td>
+            <td>QLED</td>
+            <td>4.0 &#9733;</td>
+            <td>$41 / year</td>
+          </tr>
+          <tr>
+            <td>Volt Clarity 65 OLED</td>
+            <td>65&Prime;</td>
+            <td>OLED</td>
+            <td>3.5 &#9733;</td>
+            <td>$58 / year</td>
+          </tr>
+          <tr>
+            <td>Volt Clarity 75</td>
+            <td>75&Prime;</td>
+            <td>LED</td>
+            <td>3.0 &#9733;</td>
+            <td>$74 / year</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="fine-print">*Placeholder figures based on the Australian Energy Rating Label calculation method (10 hrs/day average use, national average electricity price). Not actual product data.</p>
+
+      <div class="content-block">
+        <h2>Choosing an energy-efficient TV</h2>
+        <p>
+          Placeholder content: larger screens and higher refresh rates generally consume more power. OLED
+          panels can be efficient when displaying darker content but may draw more power on bright scenes,
+          while LED/QLED panels tend to have more consistent draw regardless of content. Checking the
+          Energy Rating Label &mdash; and the estimated annual running cost figure it displays &mdash; is the
+          quickest way to compare televisions before buying.
+        </p>
+      </div>
+
+      <div class="research">
+        <h2>Market research: TVs currently available in Australia</h2>
+        <p class="page-intro">
+          Placeholder analysis: the charts below summarise a dataset of TV listings on the Australian
+          market, covering screen technology, screen size, brand, star rating and standby/mode power draw.
+        </p>
+
+        <article class="research-question">
+          <h3>1. What screen technologies are available, and which are most frequent?</h3>
+          <p>
+            Placeholder finding: LCD (LED) panels dominate the market by a wide margin, followed by
+            standard LCD and then OLED, which remains the least common technology on sale.
+          </p>
+          <div class="chart-pair">
+            <figure class="chart-figure">
+              <img src="images/Bar%20Chart.png" alt="Bar chart of TV occurrence count by screen technology, showing LCD (LED) as the most frequent">
+              <figcaption>Occurrence count by screen technology</figcaption>
+            </figure>
+            <figure class="chart-figure">
+              <img src="images/Pie%20Chart.png" alt="Pie chart showing the share of TVs by screen technology, dominated by LCD (LED)">
+              <figcaption>Share of market by screen technology</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="research-question">
+          <h3>2. What screen sizes are available, and which are most frequent?</h3>
+          <p>
+            Placeholder finding: screen sizes span roughly 24&Prime; to 85&Prime;+, with 55&Prime; and 65&Prime;
+            the clear volume sellers, ahead of 75&Prime; and 85&Prime;. Smaller (24&ndash;32&Prime;) and mid-size
+            (42&ndash;50&Prime;) screens are on sale but in noticeably smaller numbers.
+          </p>
+          <figure class="chart-figure chart-figure--wide">
+            <img src="images/Bar%20Chart%202.png" alt="Bar chart of TV occurrence count by screen size in inches, with 55 and 65 inches the most frequent">
+            <figcaption>Occurrence count by screen size (inches)</figcaption>
+          </figure>
+        </article>
+
+        <article class="research-question">
+          <h3>3. Which brands have the largest number of models?</h3>
+          <p>
+            Placeholder finding: Kogan lists the most models, followed by LG, Samsung Electronics and
+            Samsung. Hisense, Sylvox, Philips, JVC, Sony and Eko round out the market with fewer listings each.
+          </p>
+          <figure class="chart-figure chart-figure--wide">
+            <img src="images/Bar%20Chart%203.png" alt="Bar chart of number of models by brand, with Kogan highest, then LG and Samsung Electronics">
+            <figcaption>Number of models by brand</figcaption>
+          </figure>
+        </article>
+
+        <article class="research-question">
+          <h3>4. Which screen technology consumes the least power?</h3>
+          <p>
+            Placeholder finding: standard LCD has the lowest median mode power draw, with LCD (LED) and
+            OLED both running higher &mdash; OLED has the highest median power draw of the three technologies
+            in this dataset.
+          </p>
+          <figure class="chart-figure chart-figure--wide">
+            <img src="images/Bar%20Chart%204.png" alt="Bar chart of median mode power by screen technology, with LCD lowest and OLED highest">
+            <figcaption>Median mode power (W) by screen technology</figcaption>
+          </figure>
+        </article>
+
+        <article class="research-question">
+          <h3>5. What is the relationship between screen size and power use?</h3>
+          <p>
+            Placeholder finding: power draw increases steadily with screen size &mdash; small screens
+            (under 30&Prime;) typically draw well under 50W, while the largest screens (100&Prime;+) can draw
+            several hundred watts. The relationship looks roughly linear across most of the size range.
+          </p>
+          <figure class="chart-figure chart-figure--wide">
+            <img src="images/Scatter%20Plot.png" alt="Scatter plot of screen size versus average mode power, showing an upward trend">
+            <figcaption>Screen size (inches) vs. mode power (W)</figcaption>
+          </figure>
+        </article>
+
+        <article class="research-question">
+          <h3>6. What is the relationship between star rating and screen size?</h3>
+          <p>
+            Placeholder finding: star ratings sit mostly between 2 and 8 across every screen size, with no
+            strong upward or downward trend &mdash; larger TVs are not consistently rated better or worse
+            than smaller ones, though the spread of ratings widens for the most common mid-to-large sizes.
+          </p>
+          <figure class="chart-figure chart-figure--wide">
+            <img src="images/Scatter%20Plot%202.png" alt="Scatter plot of screen size versus star rating index, showing wide spread with no strong trend">
+            <figcaption>Screen size (inches) vs. star rating index</figcaption>
+          </figure>
+        </article>
+
+        <article class="research-question">
+          <h3>7. Are there differences in power consumption between brands?</h3>
+          <p>
+            Placeholder finding: yes &mdash; Samsung Electronics, LG, Kogan and Samsung show the highest
+            average mode power, while Sony, Philips, TCL, Emete and JVC sit much lower. The box plot shows
+            that spread within each brand is also large, reflecting the range of screen sizes each brand sells.
+          </p>
+          <div class="chart-pair">
+            <figure class="chart-figure">
+              <img src="images/Bar%20Chart%205.png" alt="Bar chart of average mode power by brand, with Samsung Electronics, LG and Kogan highest">
+              <figcaption>Average mode power (W) by brand</figcaption>
+            </figure>
+            <figure class="chart-figure">
+              <img src="images/Box%20Plot.png" alt="Box plot of mode power distribution by brand, showing wide spread for several brands">
+              <figcaption>Distribution of mode power (W) by brand</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <p class="fine-print">Charts generated from placeholder/sample TV listing data for this coursework activity; figures are illustrative only.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT US PAGE -->
+    <section id="about" class="page">
+      <h1>About Us</h1>
+      <div class="content-block">
+        <p>
+          Placeholder content: Volt is a fictional Australian appliance review service created for this
+          project. Our goal is to make energy consumption information easy to compare, so households can
+          weigh purchase price against long-term running costs.
+        </p>
+        <p>
+          This website was built as a coursework activity. It demonstrates a three-page site with a
+          JavaScript-driven navigation menu, a shared stylesheet, and placeholder content about appliance
+          energy consumption in the Australian market.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="footer-year"></span> Bruce. Built as a coursework activity.</p>
+    <p class="genai-note">GenAI acknowledgement: parts of this code and/or content were generated with the assistance of GenAI. See README.md for details.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
