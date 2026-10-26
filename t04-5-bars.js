@@ -2,7 +2,7 @@ const createBarChart = (data) => {
 // --- Sizes (logical vs. display) ---
 const viewW = 500;
 const viewH = Math.max(220, data.length * 28);
-const displayW = 640;
+const displayW = 800;
 const displayH = Math.min(480, data.length * 24 + 40);
 // --- SVG root ---
 const svg = d3.select(".responsive-svg-container")
